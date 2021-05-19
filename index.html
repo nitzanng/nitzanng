@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>MineSweeper</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="main.js"></script>
+        <!-- <script src="js/util.js"></script> -->
+      </head>
+
+      <body onkeyup="handleKey(event)" onload="initGame()">
+        <h1>Mine Sweeper !</h1>
+        <div class = "timer"> </div>
+        <div> Moves:<span class="balls-count"> 0 </span> </div>
+        <button class="btn" onclick ="initGame();">START</button>
+        <br>
+        <button class="btn" onclick ="setDifficult(4)">easy</button>
+        <button class="btn" onclick ="setDifficult(5)"> medium </button>
+        <button class="btn" onclick ="setDifficult(6)"> hard </button>
+        <table border="1" cellpadding="10">
+          <tbody class="board"></tbody>
+        </table>
+        
+      </body>
+      
+      </html>
