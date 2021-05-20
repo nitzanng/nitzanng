@@ -15,11 +15,15 @@
         <div> Moves:<span class="balls-count"> 0 </span> </div>
         <button class="btn" onclick ="initGame();">START</button>
         <br>
-        <button class="btn" onclick ="setDifficult(4)">easy</button>
-        <button class="btn" onclick ="setDifficult(5)"> medium </button>
-        <button class="btn" onclick ="setDifficult(6)"> hard </button>
+        <button class="btn" onclick ="setDifficult(4)"> easy </button>
+        <button class="btn" onclick ="setDifficult(8)"> medium </button>
+        <button class="btn" onclick ="setDifficult(12)"> hard </button>
         <table border="1" cellpadding="10">
-          <tbody class="board"></tbody>
+          <tbody class="board">
+          
+          <td width="50%" title="Mines Marked"><p class= "niceP">Flags <br><span id = "flagCounter"> 0 </span></p></td>
+          <td width="50%" title="Timer"><p class = "niceP">Timer <br><span id = "timer"> 0 </span></p></td>
+        </tbody>
         </table>
         
       </body>
